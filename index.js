@@ -86,3 +86,15 @@ var finances = [
 ['Jan-2017', 138230],
 ['Feb-2017', 671099]
 ];
+
+// Initialize a counter variable to track the number of months
+var numMonths = 0;
+
+// Iterate through the finances array
+for (var i = 0; i < finances.length; i++) {
+  // Increment the counter for each month
+  numMonths++;
+}
+
+// The total number of months is now stored in the numMonths variable
+console.log("Total Months: " + numMonths);
