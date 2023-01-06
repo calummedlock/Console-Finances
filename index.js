@@ -133,6 +133,20 @@ console.log("Average Change: $" + avgChange.toFixed(2));
 var greatestInc = 0;
 var greatestIncDate = "";
 
+// Iterate through the finances array
+for (var i = 0; i < finances.length; i++) {
+  // Calculate the change in Profit/Losses from the previous month (if not the first month)
+  if (i > 0) {
+    var change = finances[i][1] - finances[i-1][1];
+
+    // Update the greatest increase in profits if necessary
+    if (change > greatestInc) {
+      greatestInc = change;
+      greatestIncDate = finances[i][0];
+    }
+  }
+}
+
 // Initialise variables to track the greatest decrease in profits and the corresponding month
 var greatestDec = 0;
 var greatestDecDate = "";
