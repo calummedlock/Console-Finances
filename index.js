@@ -122,3 +122,9 @@ for (var i = 0; i < finances.length; i++) {
     totalChange += change;
   }
 }
+
+// Calculate the average change in Profit/Losses
+var avgChange = totalChange / (finances.length - 1);
+
+// The average change in Profit/Losses is now stored in the avgChange variable
+console.log("Average Change: $" + avgChange);
