@@ -164,3 +164,6 @@ for (var i = 0; i < finances.length; i++) {
     }
   }
 }
+
+console.log("Greatest Increase in Profits: " + greatestIncDate + " ($" + greatestInc + ")");
+console.log("Greatest Decrease in Losses: " + greatestDecDate + " ($" + greatestDec + ")");
