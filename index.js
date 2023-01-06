@@ -151,3 +151,16 @@ for (var i = 0; i < finances.length; i++) {
 var greatestDec = 0;
 var greatestDecDate = "";
 
+// Iterate through the finances array
+for (var i = 0; i < finances.length; i++) {
+  // Calculate the change in Profit/Losses from the previous month (if not the first month)
+  if (i > 0) {
+    var change = finances[i][1] - finances[i-1][1];
+
+    // Update the greatest increase in profits if necessary
+    if (change < greatestDec) {
+      greatestDec = change;
+      greatestDecDate = finances[i][0];
+    }
+  }
+}
