@@ -151,7 +151,7 @@ for (var i = 0; i < finances.length; i++) {
   }
 }
 
-// Initialise variables to track the greatest decrease in profits and the corresponding month
+// Initialise variables to track the greatest decrease in losses and the corresponding month
 var greatestDec = 0;
 var greatestDecDate = "";
 
@@ -161,7 +161,7 @@ for (var i = 0; i < finances.length; i++) {
   if (i > 0) {
     var change = finances[i][1] - finances[i-1][1];
 
-    // Update the greatest increase in profits if necessary
+    // Update the greatest decrease in losses if necessary
     if (change < greatestDec) {
       greatestDec = change;
       greatestDecDate = finances[i][0];
