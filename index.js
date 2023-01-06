@@ -87,7 +87,7 @@ var finances = [
 ['Feb-2017', 671099]
 ];
 
-// Initialize a counter variable to track the number of months
+// Initialise a counter variable to track the number of months
 var numMonths = 0;
 
 // Iterate through the finances array
@@ -98,3 +98,15 @@ for (var i = 0; i < finances.length; i++) {
 
 // The total number of months is now stored in the numMonths variable
 console.log("Total Months: " + numMonths);
+
+// Initialise a variable to track the net total amount of Profit/Losses
+var netTotal = 0;
+
+// Iterate through the finances array
+for (var i = 0; i < finances.length; i++) {
+  // Add the current month's Profit/Losses to the net total
+  netTotal += finances[i][1];
+}
+
+// The net total amount of Profit/Losses is now stored in the netTotal variable
+console.log("Total: $" + netTotal);
