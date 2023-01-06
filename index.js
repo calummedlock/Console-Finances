@@ -128,3 +128,7 @@ var avgChange = totalChange / (finances.length - 1);
 
 // The average change in Profit/Losses is now stored in the avgChange variable
 console.log("Average Change: $" + avgChange);
+
+// Initialise variables to track the greatest increase in profits and the corresponding month
+var greatestInc = 0;
+var greatestIncDate = "";
