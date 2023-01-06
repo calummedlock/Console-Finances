@@ -132,3 +132,7 @@ console.log("Average Change: $" + avgChange);
 // Initialise variables to track the greatest increase in profits and the corresponding month
 var greatestInc = 0;
 var greatestIncDate = "";
+
+// Initialise variables to track the greatest decrease in profits and the corresponding month
+var greatestDec = 0;
+var greatestDecDate = "";
