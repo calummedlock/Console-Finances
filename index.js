@@ -127,7 +127,7 @@ for (var i = 0; i < finances.length; i++) {
 var avgChange = totalChange / (finances.length - 1);
 
 // The average change in Profit/Losses is now stored in the avgChange variable
-console.log("Average Change: $" + avgChange);
+console.log("Average Change: $" + avgChange.toFixed(2));
 
 // Initialise variables to track the greatest increase in profits and the corresponding month
 var greatestInc = 0;
@@ -136,3 +136,4 @@ var greatestIncDate = "";
 // Initialise variables to track the greatest decrease in profits and the corresponding month
 var greatestDec = 0;
 var greatestDecDate = "";
+
