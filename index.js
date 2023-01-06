@@ -110,3 +110,11 @@ for (var i = 0; i < finances.length; i++) {
 
 // The net total amount of Profit/Losses is now stored in the netTotal variable
 console.log("Total: $" + netTotal);
+
+// Initialise a variable to track the total change in Profit/Losses
+var totalChange = 0;
+
+// Iterate through the finances array
+for (var i = 0; i < finances.length; i++) {
+  // Calculate the change in Profit/Losses from the previous month (if not the first month)
+}
