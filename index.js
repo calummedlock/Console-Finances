@@ -87,6 +87,10 @@ var finances = [
 ['Feb-2017', 671099]
 ];
 
+// Add the header to the Financial Analysis on the console
+console.log("Financial Analysis");
+console.log("----------------------------");
+
 // Initialise a counter variable to track the number of months
 var numMonths = 0;
 
